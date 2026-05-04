@@ -10,21 +10,25 @@ Yasin Ali
 -Sends encrypted data from Arduino Uno → Arduino Nano
 -Decrypts the received data on the receiver side
 -Displays both encrypted and decrypted messages on LCD (I2C)
+
 ⚙️ Hardware Components
 -Arduino Uno (Transmitter)
 -Arduino Nano (Receiver)
 -DHT11 Temperature & Humidity Sensor
 -2x 16x2 LCD Display (I2C)
 -Jumper wires
+
 🔌 Connections
 -Arduino Uno
 -DHT11 → Data: D2, VCC: 3.3V, GND: GND
 -LCD (I2C) → SDA: A4, SCL: A5
 -Arduino Nano
 -LCD (I2C) → SDA: A4, SCL: A5
+
 Communication
 Uno TX → Nano RX
 Uno RX → Nano TX
+
 🔑 Encryption Details
 Algorithm: AES (Advanced Encryption Standard)
 Key Size: 128-bit (16 bytes)
